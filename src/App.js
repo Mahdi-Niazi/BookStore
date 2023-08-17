@@ -1,8 +1,8 @@
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
-import Books from "./pages/Books";
-import Navigation from "./components/Navigation";
-import Categories from "./pages/Catagories";
+import { Routes, Route } from 'react-router-dom';
+import './App.css';
+import Books from './pages/Books';
+import Navigation from './components/Navigation';
+import Categories from './pages/Catagories';
 
 // import Navigation from "./components/Navigation";
 
