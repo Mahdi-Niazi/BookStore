@@ -62,9 +62,9 @@
 ### Setup 
 
 1. Download the **Zip** file or clone the repo with:
-```bash git clone https://github.com/Mahdi-Niazi/Book-Store.git ``` 
+```bash git clone https://github.com/Mahdi-Niazi/BookStore.git ``` 
 1. To access cloned directory run: 
-```bash cd Book-Store ``` 
+```bash cd BookStore ``` 
 1. Open it with the live server 
 
 ### Install 
