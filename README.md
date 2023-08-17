@@ -96,8 +96,8 @@ Test for Linters For tracking linter errors locally you need to follow these ste
 
 ## 🔭 Future Features <a name="future-features"></a>
 
--  **Books**
--  **Authors**
+-  **Book ISBN Registration**
+-  **Best Book of the Months**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
