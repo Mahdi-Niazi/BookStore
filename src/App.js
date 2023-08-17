@@ -4,8 +4,6 @@ import Books from './pages/Books';
 import Navigation from './components/Navigation';
 import Categories from './pages/Catagories';
 
-// import Navigation from "./components/Navigation";
-
 function App() {
   return (
     <>
