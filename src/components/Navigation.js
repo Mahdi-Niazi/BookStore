@@ -12,7 +12,6 @@ const Navigation = () => (
       <li>
         <Link to="/">Books</Link>
       </li>
-      <li>|</li>
       <li>
         <Link to="/bookstore-cms/categories">Categories</Link>
       </li>
