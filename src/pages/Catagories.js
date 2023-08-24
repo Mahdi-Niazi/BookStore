@@ -1,13 +1,3 @@
-// import React from 'react';
-
-// const Categories = () => (
-//   <div>
-//
-//   </div>
-// );
-
-// export default Categories;
-
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { checkState } from '../redux/categories/categoriesSlice';
