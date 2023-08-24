@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import BookList from '../components/BookList';
 import BookForm from '../components/BookForm';
+import Navigation from '../components/Navigation';
 
 const Home = () => {
   const [books, setBooks] = useState([
@@ -36,6 +37,7 @@ const Home = () => {
 
   return (
     <div>
+      <Navigation />
       <BookList books={books} onDelete={handleDelete} />
       <BookForm onSubmit={handleSubmit} />
     </div>
