@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Books from './pages/Books';
 import Navigation from './components/Navigation';
@@ -7,15 +7,13 @@ import Categories from './pages/Catagories';
 function App() {
   return (
     <>
-      <header>
-        <Navigation />
-      </header>
-      <main>
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Books />} />
-          <Route path="/bookstore-cms/categories" element={<Categories />} />
+          <Route path="/" element={<Navigation />} />
+          <Route index element={<Books />} />
+          <Route path="/categories" element={<Categories />} />
         </Routes>
-      </main>
+      </BrowserRouter>
     </>
   );
 }
