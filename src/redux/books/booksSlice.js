@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 const baseUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi';
 
@@ -13,9 +14,8 @@ export const getBooks = createAsyncThunk(
   'books/getBooks',
   async (name, thunkAPI) => {
     try {
-      const resp = await fetch(`${baseUrl}/apps/${key}/books`);
-      const data = await resp.json();
-      return data;
+      const resp = await axios.get(`${baseUrl}/apps/${key}/books`);
+      return resp.data;
     } catch (error) {
       return thunkAPI.rejectWithValue('something went wrong');
     }

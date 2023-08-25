@@ -1,20 +1,25 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import './styles/Navigation.css';
 
 const Navigation = () => (
   <>
     <nav className="navbar">
-      <div>
+      <>
         <Link to="/bookstore-cms/">
-          <h1>Bookstore CMS</h1>
+          <h1 className="bookstoreTitle">Bookstore CMS</h1>
         </Link>
-      </div>
+      </>
       <ul className="nav-item">
         <li>
-          <Link to="/">Books</Link>
+          <Link to="/">
+            <span className="books">Books</span>
+          </Link>
         </li>
         <li>
-          <Link to="/categories">Categories</Link>
+          <Link to="/categories">
+            <span className="category">Categories</span>
+          </Link>
         </li>
       </ul>
     </nav>
