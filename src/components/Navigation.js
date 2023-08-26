@@ -10,23 +10,24 @@ const Navigation = () => {
   return (
     <>
       <nav className="navbar">
-        <>
+        <div className="nav-bar">
           <NavLink to="/">
             <h1 className="bookstoreTitle">Bookstore CMS</h1>
           </NavLink>
-        </>
-        <ul className="nav-item">
-          <li>
-            <NavLink style={clickedStyle} to="/">
-              <span className="books">Books</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink style={clickedStyle} to="/categories">
-              <span className="category">Categories</span>
-            </NavLink>
-          </li>
-        </ul>
+
+          <ul className="nav-item">
+            <li>
+              <NavLink style={clickedStyle} to="/">
+                <span className="books">Books</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink style={clickedStyle} to="/categories">
+                <span className="category">Categories</span>
+              </NavLink>
+            </li>
+          </ul>
+        </div>
         <div className="userIconContainer">
           <GoPerson className="userIcon" />
         </div>
