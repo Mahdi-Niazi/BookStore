@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto+Slab:wght@300;400;500&family=Roboto:wght@300;400;500;900&display=swap');
 
 .bookLists {
-  height: 10.625rem;
   margin: 2.313rem 6.25rem 0;
   padding: 2rem 9.188rem 1.625rem 1.688rem;
   border-radius: 4px;
@@ -12,6 +11,9 @@
 
 .bookSection {
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .action {
@@ -59,7 +61,7 @@
 }
 
 .interactionSection {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .comments,
@@ -117,13 +119,37 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  margin-left: 30px;
 }
 
 .line {
-  width: 0.125rem;
   height: 4.375rem;
-  margin: 1.125rem 3.688rem 0 4.938rem;
+  margin: 2rem 4rem 0 5rem;
   border: solid 1px rgb(202, 199, 199);
+}
+
+.chapter {
+  width: 30%;
+}
+
+.chapter p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.chapter h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
 }
 
 .chapter button {
@@ -131,9 +157,8 @@
   color: white;
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
-  padding: 0.3rem 1.5rem;
+  padding: 10px;
   border: none;
   border-radius: 4px;
-  margin-top: 1.3rem;
   cursor: pointer;
 }
