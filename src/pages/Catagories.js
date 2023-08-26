@@ -2,7 +2,6 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { checkState } from '../redux/categories/categoriesSlice';
 import Navigation from '../components/Navigation';
-import '../components/styles/category.css';
 
 const Categories = () => {
   const { categories } = useSelector((store) => store.categories);
@@ -10,7 +9,8 @@ const Categories = () => {
   return (
     <>
       <Navigation />
-      <div className="categories">
+      <div>
+        <h3>Categories </h3>
         <button type="button" onClick={() => dispatch(checkState())}>
           Check Status
         </button>
