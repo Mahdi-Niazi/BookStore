@@ -1,25 +1,40 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
+import { GoPerson } from 'react-icons/go';
+import './styles/Navigation.css';
 
-const Navigation = () => (
-  <>
-    <nav className="navbar">
-      <div>
-        <Link to="/bookstore-cms/">
-          <h1>Bookstore CMS</h1>
-        </Link>
-      </div>
-      <ul className="nav-item">
-        <li>
-          <Link to="/">Books</Link>
-        </li>
-        <li>
-          <Link to="/categories">Categories</Link>
-        </li>
-      </ul>
-    </nav>
-    <Outlet />
-  </>
-);
+const Navigation = () => {
+  const clickedStyle = ({ isActive }) => ({
+    color: isActive ? 'black' : '#a19e9e',
+  });
+  return (
+    <>
+      <nav className="navbar">
+        <div className="nav-bar">
+          <NavLink to="/">
+            <h1 className="bookstoreTitle">Bookstore CMS</h1>
+          </NavLink>
+
+          <ul className="nav-item">
+            <li>
+              <NavLink style={clickedStyle} to="/">
+                <span className="books">Books</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink style={clickedStyle} to="/categories">
+                <span className="category">Categories</span>
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+        <div className="userIconContainer">
+          <GoPerson className="userIcon" />
+        </div>
+      </nav>
+      <Outlet />
+    </>
+  );
+};
 
 export default Navigation;
