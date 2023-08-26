@@ -1,14 +1,15 @@
 
 .navbar {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   box-shadow: 2px 2px 8px #bfbff9;
   background: white;
 }
-.nav-bar{
+
+.nav-bar {
   display: flex;
-  
 }
+
 .bookstoreTitle {
   width: 15rem;
   height: 2.313rem;
@@ -50,6 +51,7 @@ a {
   line-height: normal;
   letter-spacing: 1.9px;
 }
+
 .userIconContainer {
   border: 2px solid #e8e8e8;
   border-radius: 100%;
