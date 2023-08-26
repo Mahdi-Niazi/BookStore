@@ -3,15 +3,18 @@
   border-radius: 10px;
   margin-bottom: 10rem;
 }
+
 .container h2 {
   margin: 1rem 0;
   color: gray;
 }
+
 .container form {
   padding: 1rem 0;
   display: flex;
   gap: 3rem;
 }
+
 .container form input {
   width: 35%;
   background-color: white;
