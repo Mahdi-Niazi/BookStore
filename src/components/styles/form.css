@@ -1,21 +1,17 @@
 .container {
-  margin: 2rem auto;
+  margin: 2rem 6.25rem;
   border-radius: 10px;
-  width: 86%;
   margin-bottom: 10rem;
 }
-
 .container h2 {
-  margin: 1rem 0.2rem;
+  margin: 1rem 0;
   color: gray;
 }
-
 .container form {
-  padding: 1rem 0.3rem;
+  padding: 1rem 0;
   display: flex;
   gap: 3rem;
 }
-
 .container form input {
   width: 35%;
   background-color: white;
